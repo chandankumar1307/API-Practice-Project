@@ -1,12 +1,15 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import Tree from "./components/Tree";
 import Pollution from "./components/Pollution";
-import Card from "./components/Card";
+
 const App = () => {
   return (
-    <div>
-      <Pollution />
-      <Card />
+    <div className="app">
+      <Routes>
+        <Route exact path="/tree" element={<Tree />} />
+        <Route exact path="/pollution" element={<Pollution />} />
+      </Routes>
     </div>
   );
 };
