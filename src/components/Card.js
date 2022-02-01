@@ -21,6 +21,7 @@ const Card = (props) => {
     fetchData();
   }, []);
 
+  console.log(receive);
   return (
     <div>
       <h1>{}</h1>
